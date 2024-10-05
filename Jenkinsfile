@@ -5,7 +5,7 @@ pipeline {
 	}
 	stages {
 		stage('Clone'){
-			steps {git url:'https://github.com/jer7n00/config-service.git', branch:'main’}			}
+			steps {git url:'https://github.com/jer7n00/config-service.git', branch:'main'}			}
 		stage('Build'){
 			steps {bat "mvn clean install -DskipTests"}
 		}
